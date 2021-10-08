@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cart-shipping</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-  
+    <div class="topnav">
+        <a class="active" href="salePage.html">ABOUT THE FIT</a>
+        <div class="topnav-right">
+          
+        </div>
+      </div>
+<ul> You Shipping Card!!</ul>
+<p id="cart"></p>
+<p id="cart"></p>
+
+<div class="container">
+    <ul>
+        <li><p id="name"></p></li>
+        <li><p id="price"></p></li>
+    </ul>
+</div>
+
+
+    <script type="text/javascript">
+      document.getElementById("name").innerHTML = localStorage.getItem("nameProduct");
+      document.getElementById("price").innerHTML = localStorage.getItem("priceProduct");
+    </script>
 </body>
 </html>
