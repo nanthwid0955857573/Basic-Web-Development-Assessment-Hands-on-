@@ -1,0 +1,30 @@
+{
+	
+    "product": [{
+                "name": "evening dress",
+                "brand": "SHEIN",
+                "description": "shorts",
+                "price": "280"
+    
+            },
+            {
+                "name": "shorts",
+                "brand": "SHEIN",
+                "description": "shorts",
+                "price": "220"
+            },
+            {
+                "name": "trousers",
+                "brand": "SHEIN",
+               " description": "shorts",
+                "price": "380"
+            },
+            {
+                "name": "sneakers ",
+                "brand": "NIKE",
+               " description": "shorts",
+                "price": "87"
+            }
+        ]
+    }
+    
