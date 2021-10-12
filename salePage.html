@@ -1,154 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sale-Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale-Page</title>
   <link rel="stylesheet" href="style.css" type="text/css">
   <script type="text/javascript" src="product.json"></script>
 </head>
+
 <body>
   <div class="topnav">
     <a class="active" href="#home">ABOUT THE FIT</a>
     <div class="topnav-right">
-      <a href="cart-shipping.html">
+      <a id="myBtn">
         <img src="img/shopping-cart.png" href="cart-shipping.html" alt="Trulli" width="45" height="35">
       </a>
     </div>
   </div>
-     <section>
-        <div class="slideshow-container" width="100%" height="15%">
-  
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="img/clother_1.jpeg" href="cart-shipping.html" width="100%" height="15%" >
-              <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="img/clother_2.jpeg" width="100%" height="15%" alt="">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="img/clother_3.jpg"width="100%" height="15%" >
-              <div class="text">Caption Three</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-     </section>
-     <section>
-      <div class="row">
-        <div class="column">
-          <div class="card" id="card-1">
-           <p style="text-align:center;">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/51dlnrdMoXL._AC_UL1200_.jpg" width="55" height="45">
-           </p> 
-            <p style="color:blue" id="name-1"></p>
-            <p id="price-1">$</p>
-            <submit class="set-button" onclick="byOnClick('1')">Order</submit>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card" id="card-2">
-            <p style="text-align:center;">
-            <img src="https://i.pinimg.com/originals/b5/e5/b8/b5e5b8159094776ed36d2410691d2887.jpg" width="55" height="45">
+  <section>
+    <div class="slideshow-container" width="100%" height="">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/c-1.jpg" width="100%" height="">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/c-2.jpg" width="100%" height="">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/c-3.jpg" width="100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+  <section>
+    <div class="row">
+      <div class="column">
+        <div class="card" id="card-1">
+          <p style="text-align:center;">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51dlnrdMoXL._AC_UL1200_.jpg" width="55"
+              height="45">
           </p>
-            <p style="color:blue" id="name-2"></p>
-            <p id="price-2">$</p>
-            <submit class="set-button" onclick="byOnClick('2')">Order</submit>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card" id="card-3">
-            <p style="text-align:center;">
-            <img src="https://contents.mediadecathlon.com/p1800681/k$aed2e4a16c52a1c08e308d5cb9bbca44/mens-mountain-walking-trousers-mh100.jpg?format=auto&f=800x800" width="55" height="45">
-           </p>
-            <p style="color:blue" id="name-3"></p>
-            <p id="price-3">$</p>
-            <submit class="set-button" onclick="byOnClick('3')">Order</submit>
-          </div>
-        </div>
-        
-        <div class="column">
-          <div class="card" id="card-4">
-            <p style="text-align:center;">
-            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b574da1d-91af-424c-8778-11590785c861/%E0%B8%A3%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B9%89-blazer-mid-77-vintage-dNWPTj.png" width="55" height="45">
-            </p>
-            <p style="color:blue"id="name-4"></p>
-            <p id="price-4">$</p>
-            <submit class="set-button" onclick="byOnClick('4')">Order</submit>
-          </div>
+          <p style="color:blue" id="name-1"></p>
+          <p id="price-1">$</p>
+          <submit class="set-button" onclick="byOnClick('1')">Order</submit>
         </div>
       </div>
-     <section>
+
+      <div class="column">
+        <div class="card" id="card-2">
+          <p style="text-align:center;">
+            <img src="https://i.pinimg.com/originals/b5/e5/b8/b5e5b8159094776ed36d2410691d2887.jpg" width="55"
+              height="45">
+          </p>
+          <p style="color:blue" id="name-2"></p>
+          <p id="price-2"></p>
+          <submit class="set-button" onclick="byOnClick('2')">Order</submit>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card" id="card-3">
+          <p style="text-align:center;">
+            <img
+              src="https://contents.mediadecathlon.com/p1800681/k$aed2e4a16c52a1c08e308d5cb9bbca44/mens-mountain-walking-trousers-mh100.jpg?format=auto&f=800x800"
+              width="55" height="45">
+          </p>
+          <p style="color:blue" id="name-3"></p>
+          <p id="price-3">$</p>
+          <submit class="set-button" onclick="byOnClick('3')">Order</submit>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card" id="card-4">
+          <p style="text-align:center;">
+            <img
+              src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b574da1d-91af-424c-8778-11590785c861/%E0%B8%A3%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B9%89-blazer-mid-77-vintage-dNWPTj.png"
+              width="55" height="45">
+          </p>
+          <p style="color:blue" id="name-4"></p>
+          <p id="price-4">$</p>
+          <submit class="set-button" onclick="byOnClick('4')">Order</submit>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+
+      <!--For Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <ul>
+          <h1>
+            You Cart!!!
+          </h1>
+          <hr></hr>
+          <li>
+            <p id="name"></p>
+          </li>
+          <li>
+            <p id="price"></p>
+          </li>
+        </ul>
+       
+      </div>
+
+    </div>
+    <section>
       <div id="content">
 
       </div>
-        <div class="row flex-container" id='row'>
-        </div>
-     </section>
-     <script type="text/javascript">
-    
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
+      <div class="row flex-container" id='row'>
+      </div>
+    </section>
+    <script type="text/javascript">
+      var link = "https://contents.mediadecathlon.com/p1800681/k$aed2e4a16c52a1c08e308d5cb9bbca44/mens-mountain-walking-trousers-mh100.jpg?format=auto&f=800x800"
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
         }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
         }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
 
-        document.getElementsByClassName('column')
+      document.getElementsByClassName('column')
 
 
-    ///////////////////////////////////////Show data from json/////////////////////////////////
-    
-    var xhr = new XMLHttpRequest();
-     xhr.open("GET", "product.json");
-     xhr.addEventListener('load', processJSON);
-     xhr.send();
+      ///////////////////////////////////////Show data from json/////////////////////////////////
 
-     function processJSON(event) {
-      var json = this.responseText;
-      var obj = JSON.parse(json);
-     
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "product.json");
+      xhr.addEventListener('load', processJSON);
+      xhr.send();
+
+      function processJSON(event) {
+
+        var json = this.responseText;
+        var obj = JSON.parse(json);
         for (var i = 0; i <= obj.length; i++) {
+
+
         }
-      
         document.getElementById('name-1').innerHTML = obj.product[0].name;
         document.getElementById('price-1').innerHTML = obj.product[0].price;
         document.getElementById('name-2').innerHTML = obj.product[1].name;
@@ -157,69 +187,79 @@
         document.getElementById('price-3').innerHTML = obj.product[2].price;
         document.getElementById('name-4').innerHTML = obj.product[3].name;
         document.getElementById('price-4').innerHTML = obj.product[3].price;
-        function byOnClick(order){
-          if(order == '1'){
-          console.log('order it',obj.product[0].price);
-            
-          }
-      }
-        //  document.getElementById('row').innerHTML = `
-        //   ${obj.product.map(function(product) { 
-        //     console.log('is a product',product);
         
-        //     return `<div class="container">
-        //       <div class="card">
-        //       <img src="${product.picture}" width="55" height="45">
-        //       <p id='product_name'style="color:blue"> ${product.name}<p>
-        //       <p id='product_price'>$ ${product.price}</p>
-        //       <button class="set-button" onclick="Order( ${product.price})">Order</button>
-        //       </div>
-        //       </div>`
-        //   })}`;
-          
-
-  }
-      function Order(params) {
-       let value = this.document.getElementById('row').innerHTML;
-       console.log(value);
-        // alert('Order',params);
-          
       }
-  function byOnClick(params) {
-    let productName;
-    let priceName;
-    if(params == '1'){
-        productName = this.document.getElementById('name-1').innerHTML;
-        priceName = this.document.getElementById('price-1').innerHTML;
-        localStorage.setItem("nameProduct", productName);
-        localStorage.setItem("priceProduct", priceName);
-        alert('Successful!!');
-    } 
-    if(params == '2'){
-        productName = this.document.getElementById('name-2').innerHTML;
-        priceName = this.document.getElementById('price-2').innerHTML;
-        localStorage.setItem("nameProduct", productName);
-        localStorage.setItem("priceProduct", priceName);
-        alert('Successful!!');
-    }
-    if(params == '3'){
-        productName = this.document.getElementById('name-3').innerHTML;
-        priceName = this.document.getElementById('price-3').innerHTML;
-        localStorage.setItem("nameProduct", productName);
-        localStorage.setItem("priceProduct", priceName);
-        alert('Successful!!');
-    }
-     if(params == '4'){
-        productName = this.document.getElementById('name-4').innerHTML;
-        priceName = this.document.getElementById('price-4').innerHTML;
-        localStorage.setItem("nameProduct", productName);
-        localStorage.setItem("priceProduct", priceName);
-       alert('Successful!!');
-    }
-  }
-          
-    
+      function Order(params) {
+        let value = this.document.getElementById('row').innerHTML;
+      }
+      function byOnClick(params) {
+        let productName;
+        let priceName;
+        if (params == '1') {
+          productName = this.document.getElementById('name-1').innerHTML;
+          priceName = this.document.getElementById('price-1').innerHTML;
+          localStorage.setItem("nameProduct", productName);
+          localStorage.setItem("priceProduct", priceName);
+          alert('Add To The Cart');
+        }
+        if (params == '2') {
+          productName = this.document.getElementById('name-2').innerHTML;
+          priceName = this.document.getElementById('price-2').innerHTML;
+          localStorage.setItem("nameProduct", productName);
+          localStorage.setItem("priceProduct", priceName);
+          alert('Add To The Cart');
+        }
+        if (params == '3') {
+          productName = this.document.getElementById('name-3').innerHTML;
+          priceName = this.document.getElementById('price-3').innerHTML;
+          localStorage.setItem("nameProduct", productName);
+          localStorage.setItem("priceProduct", priceName);
+          alert('Add To The Cart');;
+        }
+        if (params == '4') {
+          productName = this.document.getElementById('name-4').innerHTML;
+          priceName = this.document.getElementById('price-4').innerHTML;
+          localStorage.setItem("nameProduct", productName);
+          localStorage.setItem("priceProduct", priceName);
+          alert('Add To The Cart');
+        }
+      }
 
-        </script>
+
+
+      var modal = document.getElementById("myModal");
+
+
+      var btn = document.getElementById("myBtn");
+
+
+      var span = document.getElementsByClassName("close")[0];
+
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementById("name").innerHTML = localStorage.getItem("nameProduct");
+
+        document.getElementById("price").innerHTML = localStorage.getItem("priceProduct");
+      }
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+
+
+
+
+
+    </script>
 </body>
+
 </html>
