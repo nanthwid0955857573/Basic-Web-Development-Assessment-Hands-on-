@@ -251,3 +251,6 @@ img {vertical-align: middle;}
   text-decoration: none;
   cursor: pointer;
 }
+.button{
+  border-radius:8px;
+}
